@@ -21,7 +21,7 @@ except:
 ##############################################################################################################
 
 ##Import and Validate the Dataset
-s_train = pd.read_csv("./cagri_I.csv", index_col="timestamp", parse_dates=True, squeeze=True)
+s_train = pd.read_csv("./anomalies.csv", index_col="timestamp", parse_dates=True, squeeze=True)
 s_train = validate_series(s_train)
 print(s_train)
 plot(s_train) ##plot Function Draws a Chart but The Chart Is in JPEG Format !!!
